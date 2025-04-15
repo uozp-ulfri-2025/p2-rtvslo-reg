@@ -10,7 +10,7 @@ import scipy.sparse as sp
 
 
 def load(fn):
-    with gzip.open(fn, "rt") as f:
+    with gzip.open(fn, "rt", encoding="utf-8") as f:
         return json.load(f)
 
 
